@@ -5,7 +5,8 @@
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1",
     "font-awesome": "^4.7.0",
-    "css-hamburgers": "^0.8.1"
+    "css-hamburgers": "^0.8.1",
+    "slick-carousel": "^1.6.0"
   },
   "overrides": {
     "bootstrap-sass": {

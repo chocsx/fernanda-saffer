@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>saffer</title>
+    <title>Fernanda Saffer - Ortodontia e Ortopedia Facial Odontologia do Sono</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -29,24 +30,40 @@
     <div class="container-fluid">
       <header>
         <div class="row">
-          <div class="col-lg-4 col-xs-6 logo">
+          <div class="col-lg-4 col-xs-8 logo">
             <img src="./images/logo.png" alt="" class="img-responsive"> 
           </div>
-          <div class="col-lg-7 col-xs-6">
-            <nav>
+          <div class="col-xs-4 hidden-md hidden-lg menu-mobile">
+            <button class="hamburger hamburger--emphatic pull-right hidden-md hidden-lg" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+          <div class="col-lg-6 col-md-8 col-xs-12">
+            <nav class="menu">
               <ul>
-                <li><a href="#">a clínica</a></li>
+                <li><a href="#">a clínica</a></li> 
                 <li><a href="#">tratamentos</a></li>
                 <li><a href="#">fernanda saffer</a></li>
                 <li><a href="#">contato</a></li>
               </ul>
             </nav>
           </div>
+          <div class="col-lg-2 hidden-md hidden-sm hidden-xs contact">
+            <span>(51) 3346.7984 </span>
+            <br>
+            <ul class="pull-right">
+            
+              <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook-official fa-2x"></i></a></li>
+            </ul>
+          </div>
         </div>
       </header>
       <div class="content">
-        
-          <div class="row no-gutters ">
+          
+          <div class="row no-gutters">
             <div class="col-lg-8">
               <img src="./images/slide1.jpg" alt="" class="img-responsive">
             </div>
@@ -59,13 +76,93 @@
                   alinhadores transparentes.
                 </p>
               </div>
-              <div class="slide-small">
+              <div class="slide-small hidden-sm hidden-xs">
                 <img src="./images/slide1-small.jpg" alt="" class="img-responsive">
               </div>
-              <div class="footer-slider">
+              <div class="footer-slider hidden-sm hidden-xs">
                 <img src="./images/invisalign-logo.png" alt="" class="">
               </div>
             </div>
+          </div>
+
+          <div class="row no-gutters">
+            
+            <div class="col-lg-8">
+              <img src="./images/slide2.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="col-lg-4">
+              <div class="slide-text green-flat">
+                <p>
+                  Conheça os benefícios da <br>
+                  <span>TOXINA BOTULÍNICA (BOTOX)</span>
+                  na odontologia.
+                </p>
+              </div>
+              <div class="slide-small hidden-sm hidden-xs">
+                <img src="./images/slide2-small.jpg" alt="" class="img-responsive">
+              </div>
+              <div class="footer-slider hidden-sm hidden-xs">
+                <ul>
+                  <li>Correção do Sorriso Gengival</li>
+                  <li>Alívio do Bruxismo</li>
+                  <li>Correção de Rugas de Expressão</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="row no-gutters">
+            
+            <div class="col-lg-8">
+              <img src="./images/slide3.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="col-lg-4">
+              <div class="slide-text green-light">
+                <p>
+                  <span>ODONTOLOGIA TRANSPARENTE</span><br>
+                  aparelho fixo com brackets estéticos superdiscretos
+                </p>
+              </div>
+              <div class="slide-small hidden-sm hidden-xs">
+                <img src="./images/slide3-small.jpg" alt="" class="img-responsive">
+              </div>
+              <div class="footer-slider hidden-sm hidden-xs">
+                <ul>
+                  <li>Correção do Sorriso Gengival</li>
+                  <li>Alívio do Bruxismo</li>
+                  <li>Correção de Rugas de Expressão</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row no-gutters">
+            
+            <div class="col-lg-8">
+              <img src="./images/slide4.jpg" alt="" class="img-responsive">
+            </div>
+            <div class="col-lg-4">
+              <div class="slide-text green">
+                <p>
+                  Aparelhos usados durante o sono,
+                  de fácil adaptação, para o tratamento de <br>
+                  <span>RONCO</span> e <span>APNEIA</span>.
+                </p>
+              </div>
+              <div class="slide-small hidden-sm hidden-xs">
+                <img src="./images/slide4-small.jpg" alt="" class="img-responsive">
+              </div>
+              <div class="footer-slider hidden-sm hidden-xs">
+                <ul>
+                  <li>DRA. FERNANDA SAFFER - Certificada pela Sociedade Brasileira de Medicina do Sono</li>
+                  <li>Tratamento com rígidos parâmetros da AMERICAN ACADEMY OF SLEEP MEDICINE</li>
+                </ul>
+              </div>
+            </div>
+
           </div>
         
       </div>
@@ -106,22 +203,12 @@
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="/bower_components/slick-carousel/slick/slick.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
     <!-- build:js scripts/plugins.js -->
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+
     <!-- endbuild -->
     
     <!-- build:js scripts/main.js -->
