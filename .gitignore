@@ -2,4 +2,4 @@ site/node_modules
 site/dist
 site/.tmp
 site/bower_components
-site/test/*
+site/test/
