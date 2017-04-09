@@ -10,4 +10,13 @@ $(document).ready(function(){
 	$('.content').slick({
 		arrows: false
 	});
+
+	$(window).resize(function(){
+		if($(window).width() < 480){
+			logo.attr("src", "./images/logo-small.png");
+		}
+		else{
+			logo.attr("src", "./images/logo.png");	
+		}
+	})
 });
