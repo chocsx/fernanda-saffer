@@ -1,7 +1,7 @@
 $icon-font-path: '../fonts/';
 $font-family: 'Nunito', sans-serif;
 
-$green: #007A7B; 
+$green: #007A7B;
 $green-light: #00AFAA;
 $green-flat: #57C0A3;
 $blue: #6DC1E1;
@@ -19,6 +19,11 @@ $hamburger-layer-color: $green-light;
 // Google Fonts
 @import url(http://fonts.googleapis.com/css?family=Nunito:300,400,600,700);
 
+.rowspace{
+  @media screen and(min-width: 1024px){
+    padding: 3em 0;
+  }
+}
 .row.no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -37,7 +42,7 @@ html,body{
 }
 header{
   .contact{
-    color: $gray; 
+    color: $gray;
     ul{
       list-style-type: none;
       margin: 0;
@@ -60,7 +65,7 @@ header{
     }
   }
   @media screen and (min-width: 1024px){
-    padding: 10px 20px;  
+    padding: 10px 20px;
   }
   .menu-mobile{
     padding-top: 15px;
@@ -88,7 +93,7 @@ header{
         justify-content: center;
       }
       li{
-        
+
         @media screen and(min-width: 1024px){
           flex: 1 1 auto;
           border-right: 1px solid $gray;
@@ -98,7 +103,9 @@ header{
         }
         &.actv{
           a{
-            color: $green-light;
+            @media screen and (min-width: 1024px){
+              color: $green-light;
+            }
           }
         }
         a{
@@ -125,19 +132,36 @@ header{
   }
 }
 .content{
+  .row{
+    height: auto;
+    display: block;
+  }
+  .slide-image{
+    @include make-md-column(8);
+    @include make-sm-column(8);
+    img{
+      width: 100%;
+    }
+    @media screen and(max-width: 480px){
+      padding: 0;
+    }
+  }
   .slide-small{
-    @include make-lg-column(4);
+    @include make-sm-column(4);
     @media screen and(max-width: 480px){
       display: none;
     }
-    padding: 0; 
+    padding: 0;
   }
   .slide-text{
-    @include make-lg-column(4);
+    @include make-sm-column(4);
     @include make-xs-column(12);
-    padding: 20px;
+
     @media screen and(min-width: 1024px){
-      padding: 40px 30px;  
+      padding: 40px 30px;
+    }
+    @media screen and(min-width: 1440px){
+      padding: 5em;
     }
     p{
       width: 100%;
@@ -146,8 +170,9 @@ header{
       vertical-align: middle;
       line-height: 1.5;
       @media screen and(max-width: 480px){
-        font-size: 100%
-      }  
+        font-size: 100%;
+        height: 320px;
+      }
       span{
         font-size: 145%;
         font-weight: bold;
@@ -155,7 +180,7 @@ header{
     }
     &.blue{
       background-color: $blue;
-      
+
       p{
         max-width: 270px;
       }
@@ -195,7 +220,7 @@ header{
     }
   }
   .footer-slider{
-    @include make-md-column(4); 
+    @include make-md-column(4);
     @media screen and(max-width: 480px){
       display: none;
     }
@@ -211,7 +236,7 @@ header{
         padding: 0px 20px;
         font-size: 18px;
         font-weight: bold;
-        color: $gray; 
+        color: $gray;
       }
     }
   }
@@ -225,11 +250,11 @@ header{
     display: flex;
   }
   li{
-    
+
     @media screen and(min-width: 1024px){
       flex: 1 1 25%;
     }
-    
+
     text-align: center;
     color: $gray;
     padding: 20px 0;
@@ -272,12 +297,23 @@ header{
     span{
       text-transform: lowercase;
     }
-  } 
+  }
 }
 section.contato{
   h2{
+    font-size: 4em;
     padding: 10px 0px;
     color: $green-light;
+    &::after,&::before{
+      content: '';
+      display: block;
+      margin: 0 auto;
+    }
+    &::after{
+      height: 3px;
+      width: 150px;
+      background-color: currentColor;
+    }
   }
   .btn-success{
     color: #FFF !important;
@@ -285,11 +321,36 @@ section.contato{
   form{
     padding: 10px 0;
     input, textarea{
-      color: $green !important; 
+      color: $green !important;
+      height: 40px;
+      border: 1px solid $green-flat;
+      padding: 5px 15px;
+      width: 100%;
+      &::-webkit-input-placeholder {
+        color: currentColor;
+        font-style: italic;
+      }
+      &::-moz-placeholder {
+        font-style: italic;
+      }
+     }
+    textarea{
+      height: auto;
+      padding: 15px;
+    }
+    input[type="submit"]{
+      width: auto;
     }
   }
   .mapa{
     position: relative;
+    .imagem-mapa{
+      height: 450px;
+      background-image: url('../images/mapa.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
   .contact-list{
     padding: 0;
@@ -307,5 +368,61 @@ section.contato{
         color: currentColor;
       }
     }
+  }
+}
+.tratamentos{
+  padding: 2em;
+  .service{
+    padding: 1em;
+    h3{
+     text-align: center;
+     color: $green;
+     &::after, &::before{
+      display: block;
+      content: '';
+      margin: 5px auto;
+     }
+     &::after{
+      height: 2px;
+      width: 75px;
+      background-color: currentColor;
+     }
+    }
+    p{
+      border: 1px solid red;
+      padding: 2em;
+      text-align: center;
+      line-height: 1.5;
+      color: #666;
+    }
+    .service-image{
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%;
+      height: 300px;
+      transition: all .4s ease-in-out;
+      &:hover{
+        background-size: 110% 110%;
+      }
+    }
+  }
+}
+.btn-leia{
+  padding: 10px 15px;
+  border-radius: 3px;
+  margin: 0 auto;
+  max-width: 120px;
+  display: block;
+  text-align: center;
+  background-color: $green-flat;
+  color: #FFF;
+  letter-spacing: 2px;
+  text-decoration: none;
+  transition: all .3s ease;
+  &:hover{
+    text-decoration: none;
+    background-color: $green;
+    color: #FFF;
   }
 }

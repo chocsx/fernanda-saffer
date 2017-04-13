@@ -44,10 +44,10 @@
                     <nav class="menu">
                         <ul>
                             <li><a href="index.html">inicio</a></li>
-                            <li><a href="clinica.html">a clínica</a></li>
+                            <li class="actv"><a href="clinica.html">a clínica</a></li>
                             <li><a href="tratamentos.html">tratamentos</a></li>
                             <li><a href="fernanda.html">fernanda saffer</a></li>
-                            <li class="actv"><a href="contato.html">contato</a></li>
+                            <li><a href="contato.html">contato</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -65,28 +65,30 @@
       </div>
         <section class="contato">
             <div class="container">
-                <h2 class="text-center">Contato</h2>
+                <h2 class="text-center">A Clinica</h2>
 
-                <div class="row rowspace">
+                <div class="row">
                     <div class="col-lg-5">
                       <form action="" method="POST" name="formContato" class="clearfix">
-
-                        <div class="form-group">
-                            <input type="text" name="nome" placeholder="Nome">
-                        </div>
-
-                        <div class="form-group">
-                          <div class="row">
-                              <div class="col-sm-6 col-xs-12">
-                                      <input type="email" name="email" placeholder="E-mail">
-                              </div>
-                              <div class="col-sm-6 col-xs-12">
-                                      <input type="text" name="telefone" placeholder="Telefone">
-                              </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <input type="text" name="nome" placeholder="Nome" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-12">
+                                <div class="form-group">
+                                    <input type="email" name="email" id="" placeholder="Email" class="form-control">
+                                </div>
                             </div>
                         </div>
+
+
+                        <div class="form-group">
+                            <input type="text" name="telefone" class="form-control" placeholder="Telefone">
+                        </div>
                           <div class="form-group">
-                              <textarea name="mensagem" placeholder="Deixe aqui sua mensagem..." style="resize:none;" rows="7"></textarea>
+                              <textarea name="mensagem" class="form-control" placeholder="Deixe aqui sua mensagem..." style="resize:none;" rows="7"></textarea>
                           </div>
                           <div class="form-group">
                               <input type="submit" value="Enviar" class="btn btn-success col-md-3 col-xs-12 pull-right">
@@ -100,14 +102,14 @@
                             <li><span>Endereco:</span> Rua Mostardeiro 147, Porto Alegre/RS, Brasil</li>
                             <li></li>
                         </ul>
-                        <section class="mapa">
-                            <a href="https://www.google.com/maps/place/R.+Mostardeiro,+127+-+Independ%C3%AAncia,+Porto+Alegre+-+RS,+Brasil/@-30.028836,-51.2062076,16z/data=!4m8!1m2!2m1!1s127,+R.+Mostardeiro,+333+-+Rio+Branco,+RS,+90430-000,+Brasil!3m4!1s0x951979b3fa773581:0x26486bd35daaec38!8m2!3d-30.0289103!4d-51.206052">
-                            <div class="imagem-mapa"></div>
-                            </a>
-                        </section>
                     </div>
                 </div>
             </div>
+            <section class="mapa">
+                <a href="https://www.google.com/maps/place/R.+Mostardeiro,+127+-+Independ%C3%AAncia,+Porto+Alegre+-+RS,+Brasil/@-30.028836,-51.2062076,16z/data=!4m8!1m2!2m1!1s127,+R.+Mostardeiro,+333+-+Rio+Branco,+RS,+90430-000,+Brasil!3m4!1s0x951979b3fa773581:0x26486bd35daaec38!8m2!3d-30.0289103!4d-51.206052">
+                    <img src="./images/mapa.png" alt="" class="img-responsive">
+                </a>
+            </section>
         </section>
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
