@@ -133,15 +133,15 @@ header{
 }
 .content{
   .row{
-    height: auto;
+    height: 90vh;
     display: block;
   }
   .slide-image{
     @include make-md-column(8);
     @include make-sm-column(8);
-    img{
-      width: 100%;
-    }
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
     @media screen and(max-width: 480px){
       padding: 0;
     }
@@ -254,41 +254,46 @@ header{
     @media screen and(min-width: 1024px){
       flex: 1 1 25%;
     }
-
     text-align: center;
-    color: $gray;
     padding: 20px 0;
-    transition: all .3s linear;
+    a{
+      color: $gray;      
+      transition: all .3s linear;
+      display: block;
+      &:hover{
+        color: #FFF;
+        text-decoration: none;
+      }
+    }
+    
+    
     &:nth-child(1){
       border-top: 15px solid $blue;
       &:hover{
         background-color: $blue;
-        color: #fff;
       }
     }
     &:nth-child(2){
       border-top: 15px solid $green-flat;
       &:hover{
         background-color: $green-flat;
-        color: #fff;
       }
     }
     &:nth-child(3){
       border-top: 15px solid $green-light;
       &:hover{
         background-color: $green-light;
-        color: #fff;
       }
     }
     &:nth-child(4){
       border-top: 15px solid $green;
       &:hover{
         background-color: $green;
-        color: #fff;
       }
     }
     &:hover{
       background-color: currentColor;
+
     }
     h4{
       text-transform: uppercase;
@@ -339,7 +344,17 @@ section.contato{
       padding: 15px;
     }
     input[type="submit"]{
-      width: auto;
+      @media screen and (min-width: 769px){
+        width: auto;
+        font-size: 16px; 
+      }
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+    input[type="email"]{
+      @media screen and (max-width: 768px){
+        margin-bottom: 15px;
+      }
     }
   }
   .mapa{
@@ -356,11 +371,17 @@ section.contato{
     padding: 0;
     margin: 0;
     list-style-type: none;
+    @media screen and (max-width: 768px){
+        padding: 2em 0;
+    }
     li{
       line-height: 1.8;
       display: block;
       text-align: right;
       color: $gray;
+      @media screen and (max-width: 768px){
+        text-align: center;
+      }
       span{
         color: $green;
       }
