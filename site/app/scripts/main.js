@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	var logo = $('.logo img');
 	if($(window).width() < 480){
-		logo.attr("src", "./images/logo-small.png")
+		logo.attr("src", "./images/logo-1-small.png")
 	}
 	$('button.hamburger').click(function(){
 		$('nav ul').toggleClass('open');
@@ -13,10 +13,10 @@ $(document).ready(function(){
 
 	$(window).resize(function(){
 		if($(window).width() < 480){
-			logo.attr("src", "./images/logo-small.png");
+			logo.attr("src", "./images/logo-1-small.png");
 		}
 		else{
-			logo.attr("src", "./images/logo.png");	
+			logo.attr("src", "./images/logo-1.png");	
 		}
 	})
 });
