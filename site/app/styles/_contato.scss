@@ -1,0 +1,87 @@
+section.contato{
+  padding-bottom: 3em;
+  h2{
+    padding: 10px 0px;
+    color: $green-light;
+    &::after,&::before{
+      content: '';
+      display: block;
+      margin: 0 auto;
+    }
+    &::after{
+      height: 3px;
+      width: 150px;
+      background-color: currentColor;
+    }
+  }
+  .btn-success{
+    color: #FFF !important;
+  }
+  form{
+    padding: 10px 0;
+    input, textarea{
+      color: $green !important;
+      height: 40px;
+      border: 1px solid $green-flat;
+      padding: 5px 15px;
+      width: 100%;
+      &::-webkit-input-placeholder {
+        color: currentColor;
+        font-style: italic;
+      }
+      &::-moz-placeholder {
+        font-style: italic;
+      }
+     }
+    textarea{
+      height: auto;
+      padding: 15px;
+    }
+    input[type="submit"]{
+      @media screen and (min-width: 769px){
+        width: auto;
+        font-size: 16px;
+      }
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+    input[type="email"]{
+      @media screen and (max-width: 768px){
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .mapa{
+    position: relative;
+    .imagem-mapa{
+      height: 450px;
+      background-image: url('../images/mapa.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  .contact-list{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    @media screen and (max-width: 768px){
+        padding: 2em 0;
+    }
+    li{
+      line-height: 1.8;
+      display: block;
+      text-align: right;
+      color: $gray;
+      @media screen and (max-width: 768px){
+        text-align: center;
+      }
+      span{
+        color: $green;
+      }
+      a{
+        color: currentColor;
+      }
+    }
+  }
+}

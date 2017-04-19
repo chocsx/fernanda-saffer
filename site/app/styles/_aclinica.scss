@@ -1,0 +1,22 @@
+.aclinica{
+  text-align: center;
+  padding-bottom: 3em;
+  h2{
+    color: $green-light;
+    text-align: center;
+    &::after, &::before{
+     display: block;
+     content: '';
+     margin: 5px auto;
+    }
+    &::after{
+     height: 2px;
+     width: 75px;
+     background-color: currentColor;
+    }
+  }
+  p{
+    font-family: $font-text;
+    line-height: 1.4;
+  }
+}

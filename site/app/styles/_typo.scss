@@ -1,0 +1,12 @@
+h2{
+  font-size: 4em;
+  @media screen and(max-width: 768px){
+    font-size: 2.5em;
+  }
+}
+p{
+  text-align: left;
+  @media screen and (max-width: 480px){
+    text-align: justify;
+  }
+}

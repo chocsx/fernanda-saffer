@@ -1,0 +1,38 @@
+.rowspace{
+  @media screen and(min-width: 1024px){
+    padding: 3em 0;
+  }
+}
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  & > [class^="col-"],
+  & > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.img-destaque{
+  margin: 1em 0;
+}
+@mixin btn-leia($color, $color2){
+  .btn-leia{
+    padding: 10px 15px;
+    border-radius: 3px;
+    margin: 0 auto;
+    max-width: 120px;
+    display: block;
+    text-align: center;
+    background-color: $color;
+    color: #FFF;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: all .3s ease;
+    &:hover{
+      text-decoration: none;
+      background-color: $color2;
+      color: #FFF;
+    }
+  }
+}

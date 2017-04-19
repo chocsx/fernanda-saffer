@@ -1,0 +1,95 @@
+header{
+  .contact{
+    color: $gray;
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      li{
+        padding: 10px 0px 0px 10px;
+        display: inline-block;
+        a{
+          color: $gray;
+          transition: all .3s ease;
+          &:hover{
+            color: $green-flat;
+          }
+        }
+      }
+    }
+    span{
+      float: right;
+      display: block;
+    }
+  }
+  @media screen and (min-width: 1024px){
+    padding: 10px 20px;
+  }
+  .menu-mobile{
+    padding-top: 25px;
+  }
+  .logo{
+    padding-top: 10px;
+  }
+  nav{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 5;
+    ul{
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: none;
+      transition: all .4s linear;
+    &.open{
+      display: block;
+    }
+    @media screen and(max-width: 768px){
+      background-color: $green-light;
+    }
+      @media (min-width: 1024px){
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      li{
+
+        @media screen and(min-width: 1024px){
+          flex: 1 1 auto;
+          border-right: 1px solid $gray;
+        }
+        &:last-child{
+          border: 0;
+        }
+        &.actv{
+          a{
+            @media screen and (min-width: 1024px){
+              color: $green-light;
+            }
+          }
+        }
+        a{
+          text-align: center;
+          display: block;
+          text-transform: uppercase;
+          color: $gray;
+          @media screen and (max-width: 768px){
+            color: #FFF;
+            padding: 20px 0;
+            border: 1px solid white;
+          }
+          text-decoration: none;
+          &:hover{
+            text-decoration: none;
+            color: currentColor;
+            @media screen and(min-width: 1024px){
+              color: $green-light;
+            }
+          }
+        }
+      }
+    }
+  }
+}

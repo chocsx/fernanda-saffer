@@ -42,5 +42,8 @@
         "single"
       ]
     }
+  },
+  "dependencies": {
+    "gulp-sass-glob": "^1.0.8"
   }
 }

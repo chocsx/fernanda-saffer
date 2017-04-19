@@ -3,6 +3,7 @@ const gulp = require('gulp');
 const gulpLoadPlugins = require('gulp-load-plugins');
 const browserSync = require('browser-sync').create();
 const del = require('del');
+const sassGlob = require("gulp-sass-glob");
 const wiredep = require('wiredep').stream;
 const runSequence = require('run-sequence');
 
@@ -14,6 +15,7 @@ var dev = true;
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.scss')
     .pipe($.plumber())
+    .pipe(sassGlob())
     .pipe($.if(dev, $.sourcemaps.init()))
     .pipe($.sass.sync({
       outputStyle: 'expanded',

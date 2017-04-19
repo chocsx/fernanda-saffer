@@ -1,0 +1,39 @@
+.tratamentos{
+  padding: 2em;
+  @include btn-leia($green-flat, $green);
+  .service{
+    padding: 1em;
+    h3{
+     text-align: center;
+     color: $green;
+     &::after, &::before{
+      display: block;
+      content: '';
+      margin: 5px auto;
+     }
+     &::after{
+      height: 2px;
+      width: 75px;
+      background-color: currentColor;
+     }
+    }
+    p{
+      font-family: $font-text;
+      padding: 2em;
+      text-align: center;
+      line-height: 1.5;
+      color: #666;
+    }
+    .service-image{
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%;
+      height: 300px;
+      transition: all .4s ease-in-out;
+      &:hover{
+        background-size: 110% 110%;
+      }
+    }
+  }
+}
