@@ -32,8 +32,7 @@
     @include make-md-column(4);
     @include make-xs-column(12);
     @include btn-leia(#666, $green-light);
-    height: 30vh;
-    min-height: 150px;
+    min-height: 10px;
     @media screen and(min-width: 1440px){
       padding: 5em;
     }

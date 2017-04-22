@@ -1,5 +1,5 @@
 .tratamentos{
-  padding: 2em;
+  padding: 2em 0;
   @include btn-leia($green-flat, $green);
   .service{
     padding: 1em;
@@ -36,4 +36,19 @@
       }
     }
   }
+}
+.servico-detalhe{
+  p{
+    font-size:  21px;
+    line-height:  33px;
+    letter-spacing: -.003em;
+    &.text-small{
+        font-size:  16px;
+        line-height: 1.2;
+    }
+  }
+  img{
+    margin: 50px 0;
+  }
+
 }

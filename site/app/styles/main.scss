@@ -15,11 +15,11 @@ $hamburger-layer-color: $green-light;
 @import "bower_components/font-awesome/scss/font-awesome.scss";
 @import "bower_components/css-hamburgers/_sass/hamburgers/hamburgers.scss";
 @import "bower_components/slick-carousel/slick/slick.scss";
-@import "bower_components/slick-carousel/slick/slick-theme.scss";
 // endbower
 
 // Google Fonts
 @import url(http://fonts.googleapis.com/css?family=Nunito:300,400,600,700|Lora);
+@import "bower_components/slick-carousel/slick/slick-theme.scss";
 
 html,body{
   font-family: $font-family;

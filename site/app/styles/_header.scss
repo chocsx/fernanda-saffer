@@ -25,10 +25,10 @@ header{
   @media screen and (min-width: 1024px){
     padding: 10px 20px;
   }
-  .menu-mobile{
-    padding-top: 25px;
+  @media screen and (max-width: 768px){
+    padding: .5em 0;
   }
-  .logo{
+  .menu-mobile{
     padding-top: 10px;
   }
   nav{
