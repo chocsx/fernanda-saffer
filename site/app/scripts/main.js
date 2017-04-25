@@ -22,4 +22,5 @@ $(document).ready(function(){
 			logo.attr('src', './images/logo-1.png');
 		}
 	})
+
 });

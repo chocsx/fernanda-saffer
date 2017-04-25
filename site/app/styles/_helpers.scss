@@ -36,3 +36,34 @@
     }
   }
 }
+.loader{
+  height: 100vh;
+  background-color: #FFF;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  .square{
+    display: block;
+    margin: 50% auto;
+    svg{
+      max-width: 200px;
+      display: block;
+      margin: 0 auto;
+      &.animate{
+        path{
+          animation: svg-animate 2s forwards infinite;
+        }
+      }
+    }
+  }
+}
+@keyframes svg-animate {
+  33%{
+    transform: rotate(5deg);
+  }
+  66%{
+    transform: rotate(-5deg)
+  }
+}
