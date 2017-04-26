@@ -1,7 +1,6 @@
 .content{
   position: relative;
   .row{
-
     @media screen and(min-width: 1024px){
       height: 90vh;
     }
@@ -39,6 +38,7 @@
     @include make-xs-column(12);
     @include btn-leia(#666, $green-light);
     min-height: 20vh;
+    min-height: 40vh;
     @media screen and(min-width: 1440px){
       padding: 8em 4em;
     }
@@ -63,18 +63,17 @@
       }
       span{
         font-size: 145%;
+        line-height: 80px;
         font-weight: bold;
         text-align: center;
         display: block;
         @media screen and(min-width: 1024px){
           line-height: 83px;
-
         }
       }
     }
     &.blue{
       background-color: $blue;
-
     }
     &.green-flat{
       background-color: $green-flat;

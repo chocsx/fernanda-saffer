@@ -3,8 +3,7 @@ header{
     color: $gray;
     ul{
       list-style-type: none;
-      margin: 0;
-      padding: 0;
+      margin: 10px 0 0;
       li{
         padding: 10px 0px 0px 10px;
         display: inline-block;
@@ -17,9 +16,15 @@ header{
         }
       }
     }
-    span{
-      float: right;
+   span{
+      width: 100%;
       display: block;
+      margin: 0;
+      padding: 0;
+      text-align: right;
+      float: right;
+      font-size: 130%;
+
     }
   }
   @media screen and (min-width: 1024px){
